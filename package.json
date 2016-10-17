@@ -55,10 +55,7 @@
   "scripts": {
     "test": "npm run lint && mocha test && npm run cover",
     "lint": "jshint . && jscs -c .jscs.js .",
-    "cover": "istanbul cover _mocha -- test",
-    "env-setup": "./env/env-setup",
-    "env-clear": "./env/env-clear",
-    "postinstall": "npm run env-clear && npm run env-setup"
+    "cover": "istanbul cover _mocha -- test"
   },
   "engines": {
     "node": ">=0.10.0",
